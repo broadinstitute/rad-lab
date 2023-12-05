@@ -154,6 +154,7 @@ variable "git_repo_access_token" {
 variable "git_repo_url" {
   description = "URL of the repository where the module code will be stored.  Used by Cloud Build to retrieve the source code and build modules.  If you want to use the open source repository, this can be set to https://github.com/GoogleCloudPlatform/rad-lab."
   type        = string
+  default     = "https://github.com/broadinstitute/rad-lab"
 }
 
 variable "git_repo_type" {
